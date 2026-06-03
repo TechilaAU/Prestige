@@ -1,0 +1,268 @@
+/* =====================================================================
+   BushTech Design System — Colors & Type
+   Built for remote Australia. Rugged. Industrial. Dependable.
+   ===================================================================== */
+
+/* ---- Fonts (Google Fonts substitutions — see README) ---- */
+/* Fonts loaded via <link rel="preconnect"> + stylesheet in each page <head> for performance. */
+
+:root {
+  /* =================================================================
+     COLOR — PRIMARY (Australian terrain, machinery, remote environments)
+     ================================================================= */
+
+  /* Neutrals — earth & iron */
+  --bt-black:        #0A0A0B;   /* Matte black — chassis, deep ground */
+  --bt-charcoal:     #17181A;   /* Deep charcoal — primary surface */
+  --bt-iron-900:     #1F2124;   /* Iron, near-black */
+  --bt-iron-800:     #2A2D31;   /* Iron grey — elevated surface */
+  --bt-iron-700:     #383C41;   /* Iron grey — borders / dividers */
+  --bt-iron-600:     #4E545B;   /* Mid iron — muted text on dark */
+  --bt-iron-500:     #6E747C;   /* Mid grey — secondary text */
+  --bt-iron-400:     #9098A1;   /* Light iron — tertiary text */
+  --bt-iron-300:     #B6BDC4;   /* Pale iron */
+  --bt-iron-200:     #D5DADF;   /* Steel mist */
+  --bt-iron-100:     #E9ECEF;   /* Near-white iron */
+  --bt-bone:         #F4F1EA;   /* Bone / paper — warm off-white */
+
+  /* Earth tones — bushland, soil, sandstone */
+  --bt-earth-900:    #2A1F15;   /* Burnt soil */
+  --bt-earth-800:    #3D2D1F;   /* Deep earth brown */
+  --bt-earth-700:    #5C4632;   /* Earth brown — primary */
+  --bt-earth-600:    #7A5E45;   /* Mid earth */
+  --bt-earth-500:    #9C7E5E;   /* Tan */
+  --bt-sandstone:    #C9A876;   /* Dusty sandstone — primary warm neutral */
+  --bt-sandstone-l:  #DFC299;   /* Lighter sandstone */
+  --bt-dust:         #E8D9BD;   /* Pale outback dust */
+
+  /* =================================================================
+     COLOR — ACCENTS (signal, alert, status)
+     ================================================================= */
+
+  --bt-burnt-900:    #5A2208;
+  --bt-burnt-700:    #8F3A12;
+  --bt-burnt:        #C45A1B;   /* Burnt orange — primary brand accent */
+  --bt-burnt-300:    #E68A4E;
+  --bt-burnt-100:    #F8D8BD;
+
+  --bt-mining-900:   #5C1410;
+  --bt-mining:       #B33A1F;   /* Mining red — critical / alerts */
+  --bt-mining-300:   #D9745B;
+
+  --bt-amber-900:    #7A4A00;
+  --bt-amber:        #E8A317;   /* Safety amber — warnings / signal */
+  --bt-amber-300:    #F5C75A;
+
+  --bt-olive-900:    #2F3818;
+  --bt-olive:        #6B7A3F;   /* Olive green — go / operational */
+  --bt-olive-300:    #9CAA6E;
+
+  /* =================================================================
+     SEMANTIC TOKENS — default theme is DARK (operations console feel)
+     ================================================================= */
+
+  /* Surfaces */
+  --bg-base:         var(--bt-charcoal);
+  --bg-elevated:     var(--bt-iron-900);
+  --bg-raised:       var(--bt-iron-800);
+  --bg-overlay:      rgba(10, 10, 11, 0.72);
+  --bg-inset:        var(--bt-black);
+
+  /* Foreground / text */
+  --fg-1:            #F4F1EA;            /* Primary text — bone */
+  --fg-2:            var(--bt-iron-300); /* Secondary text */
+  --fg-3:            var(--bt-iron-500); /* Tertiary / muted */
+  --fg-disabled:     var(--bt-iron-700);
+  --fg-on-accent:    #FFFFFF;
+  --fg-inverse:      var(--bt-charcoal);
+
+  /* Borders / dividers */
+  --border-subtle:   rgba(255, 255, 255, 0.06);
+  --border:          rgba(255, 255, 255, 0.10);
+  --border-strong:   rgba(255, 255, 255, 0.18);
+  --border-accent:   var(--bt-burnt);
+
+  /* Brand */
+  --brand:           var(--bt-burnt);      /* Primary accent */
+  --brand-hover:     #D86A2A;
+  --brand-press:     var(--bt-burnt-700);
+  --brand-soft:      rgba(196, 90, 27, 0.14);
+
+  /* Status */
+  --status-ok:       var(--bt-olive);
+  --status-warn:     var(--bt-amber);
+  --status-alert:    var(--bt-mining);
+  --status-info:     #5B8FB9;             /* Signal blue — sparingly used */
+  --status-offline:  var(--bt-iron-600);
+
+  /* =================================================================
+     TYPOGRAPHY
+     ================================================================= */
+
+  --font-display:    'Archivo Narrow', 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-sans:       'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono:       'IBM Plex Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale — industrial, generous on display, tight on body */
+  --fs-display-xl:   80px;   --lh-display-xl: 0.95; --ls-display-xl: -0.02em;
+  --fs-display-l:    56px;   --lh-display-l:  0.98; --ls-display-l:  -0.015em;
+  --fs-display-m:    40px;   --lh-display-m:  1.02; --ls-display-m:  -0.01em;
+  --fs-h1:           32px;   --lh-h1:         1.10;
+  --fs-h2:           24px;   --lh-h2:         1.15;
+  --fs-h3:           20px;   --lh-h3:         1.20;
+  --fs-body-lg:      18px;   --lh-body-lg:    1.55;
+  --fs-body:         16px;   --lh-body:       1.55;
+  --fs-body-sm:      14px;   --lh-body-sm:    1.50;
+  --fs-caption:      12px;   --lh-caption:    1.40;
+  --fs-eyebrow:      12px;   --ls-eyebrow:    0.16em;
+  --fs-mono:         13px;
+
+  --fw-regular:      400;
+  --fw-medium:       500;
+  --fw-semibold:     600;
+  --fw-bold:         700;
+  --fw-heavy:        800;
+
+  /* =================================================================
+     SPACING — 4pt base, generous breathing room
+     ================================================================= */
+  --sp-0:   0;
+  --sp-1:   4px;
+  --sp-2:   8px;
+  --sp-3:   12px;
+  --sp-4:   16px;
+  --sp-5:   20px;
+  --sp-6:   24px;
+  --sp-8:   32px;
+  --sp-10:  40px;
+  --sp-12:  48px;
+  --sp-16:  64px;
+  --sp-20:  80px;
+  --sp-24:  96px;
+  --sp-32:  128px;
+
+  /* =================================================================
+     RADII — minimal. Industrial = mostly square corners.
+     ================================================================= */
+  --r-0:    0;
+  --r-1:    2px;
+  --r-2:    4px;     /* default — most cards, inputs */
+  --r-3:    6px;
+  --r-4:    8px;     /* buttons */
+  --r-pill: 999px;   /* status chips only */
+
+  /* =================================================================
+     ELEVATION — restrained. Industrial UI uses borders + insets more than shadows.
+     ================================================================= */
+  --shadow-0:   none;
+  --shadow-1:   0 1px 0 rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.04);
+  --shadow-2:   0 4px 12px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.05);
+  --shadow-3:   0 12px 28px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.06);
+  --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.04);
+  --glow-brand: 0 0 0 1px var(--bt-burnt), 0 0 24px rgba(196,90,27,0.35);
+  --glow-amber: 0 0 0 1px var(--bt-amber), 0 0 18px rgba(232,163,23,0.35);
+  --glow-alert: 0 0 0 1px var(--bt-mining), 0 0 18px rgba(179,58,31,0.40);
+
+  /* =================================================================
+     MOTION — quick, mechanical, no bounce
+     ================================================================= */
+  --ease-out:      cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast:      120ms;
+  --dur-base:      180ms;
+  --dur-slow:      280ms;
+}
+
+/* =====================================================================
+   LIGHT MODE — for documentation, daylight monitoring dashboards
+   ===================================================================== */
+[data-theme="light"] {
+  --bg-base:        var(--bt-bone);
+  --bg-elevated:    #FFFFFF;
+  --bg-raised:      #FFFFFF;
+  --bg-overlay:     rgba(244, 241, 234, 0.88);
+  --bg-inset:       #ECE7DC;
+
+  --fg-1:           var(--bt-charcoal);
+  --fg-2:           var(--bt-iron-700);
+  --fg-3:           var(--bt-iron-500);
+  --fg-disabled:    var(--bt-iron-300);
+  --fg-inverse:     #F4F1EA;
+
+  --border-subtle:  rgba(23, 24, 26, 0.06);
+  --border:         rgba(23, 24, 26, 0.12);
+  --border-strong:  rgba(23, 24, 26, 0.22);
+}
+
+/* =====================================================================
+   SEMANTIC TYPE CLASSES — drop into any HTML
+   ===================================================================== */
+
+.bt-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+  color: var(--fg-3);
+}
+
+.bt-display-xl,
+.bt-display-l,
+.bt-display-m {
+  font-family: var(--font-display);
+  font-weight: var(--fw-heavy);
+  text-transform: uppercase;
+  color: var(--fg-1);
+  margin: 0;
+}
+.bt-display-xl { font-size: var(--fs-display-xl); line-height: var(--lh-display-xl); letter-spacing: var(--ls-display-xl); }
+.bt-display-l  { font-size: var(--fs-display-l);  line-height: var(--lh-display-l);  letter-spacing: var(--ls-display-l);  }
+.bt-display-m  { font-size: var(--fs-display-m);  line-height: var(--lh-display-m);  letter-spacing: var(--ls-display-m);  }
+
+.bt-h1, .bt-h2, .bt-h3 {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-bold);
+  color: var(--fg-1);
+  margin: 0;
+}
+.bt-h1 { font-size: var(--fs-h1); line-height: var(--lh-h1); letter-spacing: -0.005em; }
+.bt-h2 { font-size: var(--fs-h2); line-height: var(--lh-h2); }
+.bt-h3 { font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: var(--fw-semibold); }
+
+.bt-body-lg,
+.bt-body,
+.bt-body-sm {
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  color: var(--fg-2);
+  margin: 0;
+}
+.bt-body-lg { font-size: var(--fs-body-lg); line-height: var(--lh-body-lg); }
+.bt-body    { font-size: var(--fs-body);    line-height: var(--lh-body);    }
+.bt-body-sm { font-size: var(--fs-body-sm); line-height: var(--lh-body-sm); }
+
+.bt-caption {
+  font-family: var(--font-sans);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-caption);
+  color: var(--fg-3);
+  font-weight: var(--fw-medium);
+}
+
+.bt-mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  font-weight: var(--fw-medium);
+  color: var(--fg-2);
+  letter-spacing: 0;
+}
+
+/* Specimen helpers */
+.bt-link {
+  color: var(--brand);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.bt-link:hover { color: var(--brand-hover); }
